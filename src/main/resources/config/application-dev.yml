@@ -49,18 +49,18 @@ spring:
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
-    url: jdbc:mysql://localhost:3306/jhbass?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/jhbass?user=jhbass&password=R4Z97Gtn6LKJTxhB@&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
   mail:
     host: localhost
     port: 25
-    username:
+    username: jhbass
     password:
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   r2dbc:
     url: r2dbc:mariadb://localhost:3306/jhbass?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
-    username: root
-    password:
+    username: jhbass
+    password: R4Z97Gtn6LKJTxhB@
   thymeleaf:
     cache: false
   sleuth:
